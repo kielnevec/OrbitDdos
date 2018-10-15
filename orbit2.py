@@ -26241,8 +26241,8 @@ def httpcall(url):
 			# print e.reason
 			# sys.exit()
 	# else:
-			inc_counter()
-			urllib2.urlopen(request)
+			#inc_counter()
+			#urllib2.urlopen(request)
 	return(code)		
 
 	
