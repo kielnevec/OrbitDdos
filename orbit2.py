@@ -26227,20 +26227,20 @@ def httpcall(url):
 	request.add_header('Keep-Alive', random.randint(110,160))
 	request.add_header('Connection', 'keep-alive')
 	request.add_header('Host',host)
-	try:
-			urllib2.urlopen(request)
-	except urllib2.HTTPError, e:
-			#print e.code
-			set_flag(1)
-			print '\033[0m \033[94m Gabriel Packy  \033[0m)'
+	# try:
+			# urllib2.urlopen(request)
+	# except urllib2.HTTPError, e:
+			print e.code
+			# set_flag(1)
+			# print '\033[0m \033[94m Gabriel Packy  \033[0m)'
                                                             
                                                             
                                                             
-			code=500
-	except urllib2.URLError, e:
-			#print e.reason
-			sys.exit()
-	else:
+			# code=500
+	# except urllib2.URLError, e:
+			print e.reason
+			# sys.exit()
+	# else:
 			inc_counter()
 			urllib2.urlopen(request)
 	return(code)		
