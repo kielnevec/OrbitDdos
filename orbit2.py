@@ -26230,7 +26230,7 @@ def httpcall(url):
 	# try:
 			# urllib2.urlopen(request)
 	# except urllib2.HTTPError, e:
-			print e.code
+			# print e.code
 			# set_flag(1)
 			# print '\033[0m \033[94m Gabriel Packy  \033[0m)'
                                                             
@@ -26238,7 +26238,7 @@ def httpcall(url):
                                                             
 			# code=500
 	# except urllib2.URLError, e:
-			print e.reason
+			# print e.reason
 			# sys.exit()
 	# else:
 			inc_counter()
